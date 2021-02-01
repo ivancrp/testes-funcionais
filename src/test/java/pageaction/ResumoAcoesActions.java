@@ -33,7 +33,7 @@ public class ResumoAcoesActions {
 
 	public void anliseHorizontaldoDemonstrativodeFluxodeCaixa() {
 
-		objResumoAcoes.getBtnAnaliseHorizontalDemonstrativoFluxoCaixa().click();
+		objResumoAcoes.getBtnAnaliseHorizontaldoDemonstrativodeFluxodeCaixa().click();
 
 	}
 

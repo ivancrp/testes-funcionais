@@ -1,5 +1,7 @@
 package pageaction;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -19,18 +21,16 @@ public class AnaliseVerticalBalancoPatrimonialActions {
 
 	public void analiseVerticalBalancoPatrimonialObjects() {
 
-		// verifica se o CheckBox está marcado
+		// verifica se o CheckBox está marcado se não será marcado
 		List<WebElement> checks = objAnaliseVerticalBalancoPatrimonial.getCheckbox();
 		for (int i = 0; i < checks.size(); i++) {
-
-			if (!checks.get(i).isEnabled()) {
+			if (checks.get(i).getAttribute("ariaChecked").equals("false")) {
 				checks.get(i).click();
+
 			}
-
 		}
-
 	}
-	
+
 	public void campoParecerAnalista() {
 
 		objAnaliseVerticalBalancoPatrimonial.getParecerAnalista().sendKeys(
@@ -40,6 +40,5 @@ public class AnaliseVerticalBalancoPatrimonialActions {
 
 		objAnaliseVerticalBalancoPatrimonial.getBtnVoltar().click();
 	}
-	
 
 }

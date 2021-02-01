@@ -1,5 +1,6 @@
 package pageobjects;
 
+//Análise Vertical do Balanço Patrimonial
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,7 @@ public class AnaliseVerticalBalancoPatrimonialObjects {
 	@FindBy(xpath = "//span[text()=' Submeter ']")
 	private WebElement btnSubmeter;
 
-	@FindBy(xpath = "//ion-checkbox")
+	@FindBy(xpath = "//ion-checkbox/button")
 	private List<WebElement> checkbox;
 
 	@FindBy(css = "label[class='nomeLabel']")

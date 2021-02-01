@@ -5,15 +5,15 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import pageobjects.DemonstrativoFluxoCaixaObjects;
+import pageobjects.AnaliseHorizontalDoDemonstrativoDeFluxoDeCaixaObjects;
 
-public class DemonstrativoFluxoCaixaActions {
+public class AnaliseHorizontalDoDemonstrativoDeFluxoDeCaixaActions {
 	
-	static DemonstrativoFluxoCaixaObjects objDemonstrativoFluxoCaixa;
+	static AnaliseHorizontalDoDemonstrativoDeFluxoDeCaixaObjects objDemonstrativoFluxoCaixa;
 	
-	public DemonstrativoFluxoCaixaActions(WebDriver driver) {
+	public AnaliseHorizontalDoDemonstrativoDeFluxoDeCaixaActions(WebDriver driver) {
 		
-		objDemonstrativoFluxoCaixa = new DemonstrativoFluxoCaixaObjects(driver);
+		objDemonstrativoFluxoCaixa = new AnaliseHorizontalDoDemonstrativoDeFluxoDeCaixaObjects(driver);
 	}
 
 	public void demonstrativoFluxoCaixa() {

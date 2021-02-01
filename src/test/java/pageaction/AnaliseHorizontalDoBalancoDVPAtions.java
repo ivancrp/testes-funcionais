@@ -5,14 +5,14 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import pageobjects.BalancoDVPObjects;
+import pageobjects.AnaliseHorizontalDoBalancoDVPObjects;
 
-public class BalancoDVPAtions {
+public class AnaliseHorizontalDoBalancoDVPAtions {
 	
-	static BalancoDVPObjects objBalancoDVP;
+	static AnaliseHorizontalDoBalancoDVPObjects objBalancoDVP;
 
-	public BalancoDVPAtions(WebDriver driver) {
-		objBalancoDVP = new BalancoDVPObjects(driver);
+	public AnaliseHorizontalDoBalancoDVPAtions(WebDriver driver) {
+		objBalancoDVP = new AnaliseHorizontalDoBalancoDVPObjects(driver);
 		// TODO Auto-generated constructor stub
 	}
 	

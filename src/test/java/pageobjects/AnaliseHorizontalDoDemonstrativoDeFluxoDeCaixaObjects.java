@@ -1,16 +1,16 @@
 package pageobjects;
 
+//Análise Horizontal do Demonstrativo de Fluxo de Caixa
+
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.internal.WrapsElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BalancoFinanceiroObjects {
+public class AnaliseHorizontalDoDemonstrativoDeFluxoDeCaixaObjects {
 
 	private WebDriver driver;
 
@@ -23,14 +23,13 @@ public class BalancoFinanceiroObjects {
 	@FindBy(xpath = "//span[text()=' Submeter ']")
 	private WebElement btnSubmeter;
 
-	@FindBy(xpath = "//ion-checkbox")
+	@FindBy(xpath = "//ion-checkbox/button")
 	private List<WebElement> checkbox;
-	
-	@FindBy (css="label[class='nomeLabel']")
+
+	@FindBy(css = "label[class='nomeLabel']")
 	private WebElement labelUser;
 
-	@FindAll({ @FindBy(xpath = "//div[@class='ql-editor']"),
-			@FindBy(xpath = "//div[@class='ql-editor ql-blank']") })
+	@FindAll({ @FindBy(xpath = "//div[@class='ql-editor']"), @FindBy(xpath = "//div[@class='ql-editor ql-blank']") })
 	private WebElement parecerAnalista;
 
 	@FindBy(xpath = "//span[text()='OK']")
@@ -43,11 +42,7 @@ public class BalancoFinanceiroObjects {
 		return labelUser;
 	}
 
-	public void setLabelUser(WebElement labelUser) {
-		this.labelUser = labelUser;
-	}
-
-	public BalancoFinanceiroObjects(WebDriver driver) {
+	public AnaliseHorizontalDoDemonstrativoDeFluxoDeCaixaObjects(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -77,11 +72,10 @@ public class BalancoFinanceiroObjects {
 	}
 
 	public List<WebElement> getCheckbox() {
-
 		return checkbox;
 	}
 
-	public void setCheckbox(List<WebElement>checkbox) {
+	public void setCheckbox(List<WebElement> checkbox) {
 		this.checkbox = checkbox;
 	}
 
@@ -109,4 +103,10 @@ public class BalancoFinanceiroObjects {
 		this.btnCancelar = btnCancelar;
 	}
 
+	public void setLabelUser(WebElement labelUser) {
+		this.labelUser = labelUser;
+	}
+	
+	
+	
 }
