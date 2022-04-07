@@ -16,8 +16,8 @@ public class LoginAction {
 	
 	public void login() {
 		// TODO Auto-generated method stub
-		objLogin.getUsuario().sendKeys("ivan.alves");
-		objLogin.getPassword().sendKeys("Trigonometria@tce08");
+		objLogin.getUsuario().sendKeys("Usuario");
+		objLogin.getPassword().sendKeys("Senha");
 		objLogin.getEntrar().click();
 		
 
